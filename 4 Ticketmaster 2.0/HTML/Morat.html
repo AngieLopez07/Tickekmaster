@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Master 2.0</title>
+    <link rel="icon" href="../JPG/marto.png" type="image/x-icon">
+</head>
+<body style="background-image: url(../JPG/fondo.jpeg) ;">
+
+<br>
+    <h1 align="center" ><u><i><mark style="background-color: white; color: black;">Compra de Boletos para el concierto de Morat</mark></i></u></h1>
+<br>
+    <hr>
+    <embed type="image/jpeg" src="../JPG/isaza.jpeg" width="250">
+    <embed type="image/jpeg" src="../JPG/isaza.jpeg" width="250">
+    <embed type="image/jpeg" src="../JPG/isaza.jpeg" width="250">
+    <embed type="image/jpeg" src="../JPG/isaza.jpeg" width="250">
+    <embed type="image/jpeg" src="../JPG/isaza.jpeg" width="250">
+
+    <hr>
+
+    <br>
+    <br>
+<h2 align="left"> <mark style="background-color: white; color: black;"><u>¡Reserva tus boletos aquí!</mark></u></h2></body>
+
+<br>
+<form action="../PHP/recibeinfo.php" method="post" target="_blank">
+
+    <fieldset>
+        <legend align="center"><strong><h3><mark style="background-color: white; color: black;">Datos personales</mark></h3></strong></legend>
+        <p></p>
+
+        <label> <strong> <mark style="background-color: white; color: black;">Nombre(s): </mark> </strong> </label> &nbsp;
+            <input id="nombre" type="text" name="Nombre" placeholder="Brenda" required/>
+
+        <br><br>
+
+        <label for="apellido"> <strong> <mark style="background-color: white; color: black;">Apellido materno: </mark></strong> &nbsp;
+            <input id="apellido" type="text" name="Apellidomaterno" placeholder="Fernández" required/>
+
+        <br><br>
+
+        <label for="apellido"><strong> <mark style="background-color: white; color: black;">Apellido paterno: </mark></strong> &nbsp;
+            <input id="apellido" type="text" name="Apellidopaterno" placeholder="González" required>
+        </label><br><br>
+
+        <label for="zona"><strong> <mark style="background-color: white; color: black;" required>Zona: </label></mark></strong> &nbsp;
+        <select name="Zona" id="zona">Zona
+            <option value="Zona A">Zona A</option>
+            <option value="Zona B">Zona B</option>
+            <option value="Zona C">Zona C</option>
+            <option value="Zona D">Zona D</option>
+        </select>
+        <br><br>
+
+        <!-- Número de boletos -->
+        <label><strong> <mark style="background-color: white; color: black;">Número de boletos: </label></mark></strong> &nbsp;
+            <input name="boletos" type="number" max="15" min="1">
+        <br><br>
+
+
+        <label for="artista"><strong> <mark style="background-color: white; color: black;" required>Artista: </label></mark></strong> &nbsp;
+        <select name="Artista" id="artista">Artista
+            <option value="Martín">Martín</option>
+            <option value="Isaza">Isaza</option>
+            <option value="Villamil">Villamil</option>
+            <option value="Simon">Simon</option>
+        </select>
+
+        <br><br>
+        <label><strong> <mark style="background-color: white; color: black;">Fecha: </label></mark></strong> &nbsp;
+            <input type="date" name="Fecha" required>
+        <br><br>
+
+        <label for="lugar"><strong> <mark style="background-color: white; color: black;" required>Lugar: </label></mark></strong> &nbsp;
+        <select name="Lugar" id="lugar">Lugar
+            <option value="Auditorio Nacional">Auditorio Nacional</option>
+            <option value="Palacio de los Deportes">Palacio de los Deportes</option>
+            <option value="Bellas Artes">Bellas Artes</option>
+            <option value="El Palenque">El Palenque</option>
+        </select>
+        <br><br>
+
+        <label><strong> <mark style="background-color: white; color: black;">Número de contacto: </label></mark></strong> &nbsp;
+            <input type="number" name="Número" placeholder="5514212915" required>
+        <br><br>
+        <label><strong><mark style="background-color: white; color: black;">Email:</label></mark></strong> &nbsp;
+            <input type="email" name="Correo" placeholder="persona@gmail.com" required>
+        
+        </label><br><br>
+    
+        <p><strong><mark style="background-color: white; color: black;">Paquetes Extra</p></mark></strong>
+        
+        <p></p>
+        <input type="radio" name="Tipodepaquete" value="VIP">
+        <strong><mark style="background-color: white; color: black;">VIP</mark></strong> &nbsp;
+        <br><br>
+        
+        <input type="radio" name="Tipodepaquete" value="Pass Plus">
+        <strong><mark style="background-color: white; color: black;">Pass plus</mark></strong> &nbsp;
+        <br><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Borrar</button>
+    </fieldset>
+</form>
+
+<br>
+<h3 align="center"><mark style="background-color: white; color: black;">Libre de derechos de autor by Angélica Araceli López Avilés</mark></h3>
+<br>
+
+</body>
+</html>
